@@ -1,0 +1,1026 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor-de-fundo: #1C1C1C;
+    --cor-de-fundo-menu: #E81E4A;
+    --cor-do-link: #0B1D21;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: "Averia Sans Libre", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+
+/* ------------------------------ Seção Menu -------------------------------*/
+
+.cabecalho {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px; 
+    background-color: #2A5959;
+    height: 56px; 
+}
+
+.cabecalho__logo {
+    max-width: 100px;
+    margin-left: 16px; 
+}
+
+.cabecalho__titulo {
+    font-size: 24px !important; 
+    margin: 0 20px; 
+    color: #F5F5DC;
+}
+
+.navegacao {
+    margin-left: auto; /* Empurra a navegação para a direita */
+}
+
+.navegacao__lista {
+    display: flex; 
+    list-style: none; /* Remover marcadores da lista */
+    padding: 0; 
+    margin: 16px;             
+}
+
+.navegacao__elemento {
+    margin-left: 20px; 
+    font-size: 10px;
+    margin-right: 16px;
+        
+}
+
+.navegacao__elemento a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #F5F5DC; 
+    font-weight: bold; 
+    font-size: 14px !important;
+    margin-left: 40px;
+    text-decoration: underline;
+    
+}
+
+.navegacao__elemento a:hover {
+    color: black; /* Mudar a cor ao passar o mouse */
+}
+
+
+/* ------------------------------ Seção Apresentação ------------------------------*/
+
+.apresentacao {
+    position: relative;
+    margin: 0 auto; /* Centraliza a seção horizontalmente */
+    display: block;
+    padding: 20px 0; /* Remove o padding lateral */
+    margin: 40px;
+}
+
+.apresentacao__arte {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+.apresentacao__titulo {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px;   
+    color: white;
+    font-size: 57px !important;
+    padding: 10px;
+    flex-wrap: wrap;
+    max-width: 558px;
+    color: black;
+    text-shadow: 0px 4px 5px #FFF;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 0;
+}    
+
+.redes__elemento a {
+    font-family: "Averia Sans Libre", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #F5F5DC;        
+}
+
+.redes__elemento img {
+    width: 24px;    
+}
+
+.redes__elemento a:hover {
+    color: black;
+}    
+
+
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+
+.sobre-mim {
+    background-color: #A50B48;
+    padding: 20px 0; /* Remove o padding lateral */
+    margin: 40px;
+    border-radius: 16px;    
+}    
+
+.sobre-mim__titulo {
+    margin: 10px;
+    margin-left: 40px;
+    font-family: "Averia Sans Libre", sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    color: #F5F5DC;
+}
+
+.sobre-mim__fotoetexto {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 40px;
+}
+
+.sobre-mim__texto {
+    margin-right: 40px; 
+    width: 100%;
+    font-family: "Averia Sans Libre", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: justify;    
+    color: #F5F5DC;
+}
+
+.sobre-mim__foto {
+    width: 152px; 
+    height: 218px;
+    object-fit: contain; /* Garante que a imagem seja redimensionada sem cortar ou esticar */          
+}
+
+.sobre-mim__links {
+    font-family: "Averia Sans Libre", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #F5F5DC;
+}
+
+.redes {
+    margin-left: 40px;           
+}
+
+.redes__elemento a {
+    font-size: 18px;
+}
+
+
+
+/*---------------------------- Seção Formação Acadêmica ---------------------------*/
+.formacao {
+    background-color: #2A5959;
+    border-radius: 16px;
+    text-align: center;
+    padding: 20px 0; 
+    margin: 40px;    
+           
+}
+
+.formacao__titulo {
+    font-family: "Averia Sans Libre", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #F5F5DC; 
+}
+
+.formacao__lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 0;
+    margin-right: 56px;
+    gap: 49px;
+}
+
+.formacao__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 264px;
+    height: 100%;
+
+    
+    justify-content: flex-start;
+    padding: 15px;   
+}
+
+.formacao__elemento__descricao {
+    min-height: 60px; 
+    text-align: center;
+    margin-left: 0;
+}
+
+.formacao__icone {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    height: 217px;
+    width: 264px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px; 
+    max-width: 100%; 
+    object-fit: contain; /* Garante que a imagem seja redimensionada sem cortar ou esticar */    
+}
+ 
+.formacao__nome {
+    text-align: left;
+    font-size: 16px;
+    margin: 5px 16px;
+    max-width: 264px;
+    color: #F5F5DC;    
+}
+ 
+.formacao__detalhe {
+    text-align: left;
+    color: #F5F5DC;
+    font-size: 0.9rem;
+    margin: 5px 16px;
+}
+
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+
+.habilidades {
+    background-color: #A50B48;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0; 
+    margin: 40px;
+    
+        
+}
+
+.habilidades__titulo {
+    font-family: "Averia Sans Libre", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #F5F5DC;
+}
+
+.habilidades__lista {
+    display: flex;
+    width: 100%;
+    flex-direction: row;    
+    padding: 0;
+    gap: 4px;
+    justify-content: space-around; 
+       
+}
+
+.habilidades__elemento {
+    display: flex;
+    width: 184px;
+    height: 200px;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    background-color: #F5F5DC;
+    margin: 10px;
+    border-radius: 16px;
+    
+}
+
+.habilidades__icone {
+    width: 80px; 
+    height: 80px; 
+    object-fit: contain; /* Mantém a proporção da imagem dentro do tamanho definido */
+    align-self: center;
+    padding: 30px;    
+}
+
+.habilidades__nome {
+    align-self: center;
+    color: var(--meu_preto, #0B1D21);
+    font-family: "Averia Sans Libre", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+
+/*------------------------------ Seção de Projetos --------------------------------*/
+
+.projetos {
+    padding: 40px 0; 
+    margin: 40px;
+    background-color: #2A5959;
+    border-radius: 16px;
+    color: #F5F5DC;     
+}
+
+.projetos__titulo{
+    text-align: center;
+    font-family: "Averia Sans Libre", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.projetos__titulo-front {
+    margin-left: 40px;
+    font-family: "Averia Sans Libre", sans-serif;
+    font-size: 32px;
+    font-weight: 700;    
+}
+
+.projetos__conteiner {
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+    margin-bottom: 20px;                             
+}
+
+.projetos__conteiner_inverse {
+    display: flex;
+    margin-top: 40px;   
+    
+}
+
+.catdecoder, .rockflix, .itau, .cosmogonia, .meiofio, .sumupix {
+    width: 446px;
+    height: 296px;
+    border-radius: 16px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.projetos__dados {
+    display: flex;
+    flex-direction: column;    
+    font-size: 20px;
+    height: 296px;
+}
+
+.projetos__nome {
+    width: 658px;
+    align-self: stretch;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: "Averia Sans Libre", sans-serif;
+    font-weight: 700;
+    font-size: 32px;            
+}
+
+.projetos__descricao {    
+    margin: 40px;
+    font-family: "Averia Sans Libre", sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: justify;                  
+}
+
+.projetos__icones-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;        
+}
+
+.projetos_links {
+    width: 170px;
+}
+
+.projetos__icones {
+    display: flex;
+    gap: 10px; /* Espaço entre os ícones */
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 450px;
+    align-items:flex-start;
+}
+
+.figma, .javascript, .css, .html{
+    width: 53px;
+    height: 53px;
+}
+
+.ferramentas-utilizadas {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+ 
+}
+
+.icone__container {
+    display: flex;
+    justify-content: center;
+    margin-left: 16px;
+    margin-top: 4px;
+    margin-bottom: 24px;
+    gap: 16px;
+    padding: 0;
+    list-style: none;
+}
+
+.icone__elemento {
+    display: flex;
+    flex-direction: column;
+}
+
+.icone__elemento a:hover {
+    color: #A50B48;
+}
+
+.icone {
+    width: 40px;
+    height: 40px;    
+}
+
+.link__projeto {
+    font-family: "Averia Sans Libre", sans-serif;
+    font-size: 24px;
+    color: black;
+    stroke: none;
+}
+
+.portifolio, .sumupix, .meiofio {
+    width: 446px;
+    height: 296px;    
+    border-radius: 16px;
+    margin-left: 0;
+    margin: 40px;
+    order: 2;
+}
+
+.projetos__icones_reverse {
+    display: flex;
+    gap: 10px; /* Espaço entre os ícones */
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 20px;
+    align-items:flex-start;
+}
+
+.custom-bar {
+  background-color: #e0e6d5; 
+  height: 1px; 
+  width: 568px; 
+  margin: 40px auto; 
+  align-self: center;
+  
+}
+
+
+/* ------------------------------ Rodapé ---------------------------------------*/
+
+.footer {
+    background-color: #A50B48; 
+    color: #F5F5DC; 
+    text-align: center; 
+    padding: 20px 0; 
+    width: 100%; 
+    position: relative; 
+    font-family: "Averia Sans Libre", sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+.footer a {
+    color: #F5F5DC; 
+    text-decoration: none; 
+}
+
+
+/* -------------------------------------------- Responsividade --------------------------------------------------*/
+
+/* Para Tablets (768px e acima) */
+@media (max-width: 768px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+    
+    .cabecalho {
+        max-width: 768px;
+    }
+
+    .cabecalho__logo {
+        margin-left: 5px;        
+    }
+
+    .cabecalho__titulo {
+        font-size: 14px !important;
+        text-align: center;        
+    }
+    
+    .navegacao {
+        display: flex;
+        justify-content: center;        
+    }
+    
+    .navegacao__lista {    
+        display: flex;        
+        flex-wrap: wrap;
+        align-items: center;     
+    }
+    
+    .navegacao__elemento a {
+        margin-left: 0;
+        margin-bottom: 0;
+        font-size: 14px !important;        
+    }           
+         
+
+    .apresentacao {
+        max-width: 768px;
+        padding: 10px 0; 
+        margin: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .apresentacao__titulo {
+        font-size: 24px !important; 
+        bottom: 15px; /* Ajusta a posição vertical */
+        left: 15px; /* Ajusta a posição horizontal */
+        flex-wrap: wrap;
+        width: 300px;
+    }
+
+    .redes__elemento a {
+        font-size: 16px; 
+        
+    }
+
+    .sobre-mim {
+        padding: 10px 0; 
+        margin: 20px; 
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .sobre-mim__titulo {
+        margin-left: 20px; 
+        font-size: 24px; 
+    }
+
+    .sobre-mim__fotoetexto {
+        flex-direction: column; 
+        padding: 0 20px;        
+    }
+
+    .sobre-mim__texto {
+        margin-right: 0; 
+        font-size: 16px; 
+    }
+
+    .sobre-mim__foto {
+        width: 200px; 
+        height: 200px; 
+    }
+
+    .redes {
+        margin-left: 20px; 
+    }
+
+    /* ----------------------------------------FORMAÇÃO -------------------------------------------- */
+
+    .formacao {               
+        padding: 10px 0; 
+        margin: 20px;          
+    }
+
+    .formacao__titulo {
+        font-size: 24px; 
+    }
+
+    .formacao__lista {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 20px; 
+        margin-top: 20px;
+        justify-content: center;        
+    }
+
+    .formacao__elemento {               
+        max-width: 200px;
+        margin-bottom: 10px;      
+    }   
+
+    .formacao__icone {        
+        width: 200px !important;
+        height: 150px !important;        
+        margin: 0;
+        padding: 0;
+        border-radius: 4px;   
+        
+    }
+
+    .formacao__nome {
+        font-size: 12px;
+        padding: 0 !important;
+        margin: 0 !important; 
+    }
+
+    .formacao__detalhe {
+        font-size: 10px;
+        padding: 0;
+        margin: 0; 
+    }
+
+    /* ----------------------------------------------HABILIDADES -------------------------------------------------- */
+
+    .habilidades {
+        padding: 30px 0; 
+        margin: 20px; 
+    }
+ 
+
+    .habilidades__titulo {
+        font-size: 24px; 
+    }
+
+    .habilidades__lista {
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .habilidades__elemento {
+        width: 180px;
+        height: 180px; 
+    }
+
+    .habilidades__icone {
+        width: 60px; 
+        height: 60px; 
+        padding: 20px; 
+    }
+
+    .habilidades__nome {
+        font-size: 20px; 
+    }
+
+    /* ------------------------------------------PROJETOS ----------------------------------------------- */
+
+    .projetos {        
+        padding: 10px 0; 
+        margin: 10px; 
+    }
+
+    .projetos__titulo {
+        font-size: 24px; 
+    }
+
+    .projetos__conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        height: auto;                              
+    }
+
+    .projetos__conteiner_inverse {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        height: auto;
+        
+    }
+    
+    .catdecoder, .rockflix, .itau, .cosmogonia {
+        margin: 0;
+        width: 446px;
+        height: 296px;
+        border-radius: 16px;         
+        max-width: 100%;
+        height: auto;
+        
+    }
+
+    .portifolio, .sumupix, .meiofio {
+        margin: 0;
+        width: 446px;
+        height: 296px;
+        border-radius: 16px;         
+        max-width: 100%;
+        height: auto;
+        
+    }
+
+    .projetos__nome {
+        font-size: 28px;
+        margin-left: 20px;        
+    }
+
+    .projetos__descricao {
+        font-size: 14px; 
+        margin: 10px;         
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .projetos__titulo-e-texto {
+        order: 2;      
+        box-sizing: border-box;
+    }
+
+    .footer {
+        font-size: 20px;
+        padding: 15px 0; 
+    }
+
+
+}
+
+/*---------------------------------------RESPONSIVIDADE-----------------------------*/
+
+/* Para Celulares (375px e abaixo) */
+@media (max-width: 375px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .cabecalho {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+   
+    }
+
+    .cabecalho__logo {
+        width: 10%;
+        margin: 0;
+    }
+    
+    .cabecalho__titulo {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+   
+    .navegacao__elemento a {
+        font-size: 0.85rem; /* Diminui o tamanho da fonte para telas pequenas */
+    }
+
+    .apresentacao {
+        padding: 20px 0; 
+        margin: 10px; 
+    }
+
+    .apresentacao__titulo {
+        font-size: 28px; 
+        bottom: 10px; 
+        left: 10px; 
+    }
+
+    .redes {
+        flex-direction: column; 
+        gap: 16px; 
+    }
+
+    .redes__elemento a {
+        font-size: 24px; 
+    }
+
+    .sobre-mim {
+        padding: 20px 0;
+        margin: 10px; 
+    }
+
+    .sobre-mim__titulo {
+        font-size: 24px; 
+    }
+
+    .sobre-mim__fotoetexto {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 0 10px; 
+    }
+
+    .sobre-mim__texto {
+        font-size: 18px;        
+        margin-right: 0; 
+    }
+
+    .sobre-mim__foto {
+        width: 200px; 
+        height: 200px;        
+    }
+
+    .redes {
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+/*------------ FORMAÇÃO ------------------*/
+
+    .formacao {
+        padding: 20px 0; 
+        margin: 10px; 
+    }
+
+    .formacao__titulo {
+        font-size: 24px; 
+    }
+
+    .formacao__lista {
+        flex-direction: column; 
+        align-items: center; 
+        margin-right: 0; 
+    }
+
+    .formacao__elemento {
+        display: flex;
+        width: 100%px;
+        flex-direction: column; 
+        align-items: center; 
+        max-width: 300px; 
+        height: auto; 
+    }
+
+    .formacao__icone {
+        height: 200px; 
+    }
+
+    .formacao__elemento__descricao {
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    .formacao__nome {
+        font-size: 0.9rem;
+        
+    }
+
+    .formacao__detalhe {
+        font-size: 0.7rem; 
+    }
+
+    .habilidades {
+        padding: 20px 0; 
+        margin: 10px; 
+    }
+
+    .habilidades__titulo {
+        font-size: 24px; 
+    }
+
+    .habilidades__lista {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .habilidades__elemento {
+        width: 100%; 
+        max-width: 200px; 
+        height: auto; 
+    }
+
+    .habilidades__icone {
+        width: 50px; 
+        height: 50px; 
+        padding: 15px; 
+    }
+
+    .habilidades__nome {
+        font-size: 18px; 
+    }
+
+    /*-------------------------PROJETOS -------------------*/
+
+
+    
+    .projetos__titulo {
+        font-size: 24px; 
+    }
+
+    .projetos__titulo-front {
+        font-size: 24px;
+    }
+
+    .projetos__conteiner, .projetos__conteiner_inverse {          
+        flex-direction: column;
+        margin: 0 auto;        
+    }
+
+    .projetos__titulo-e-texto {
+        width: 80%;
+        padding: 10px;
+
+    }
+
+    .projetos__dados {
+        width: 80%;
+        margin-bottom: 140px;
+        padding: 10px;
+        
+        
+    }
+ 
+      
+    .catdecoder, .rockflix, .itau, .cosmogonia, .portifolio, .sumupix, .meiofio {      
+        width: 100%;
+        height: auto;
+        margin-top: 20px;         
+    }
+
+    .projetos__nome {
+        font-size: 24px;
+        padding: 5px;
+        margin-left: 5px;
+        max-width: 300px;
+        text-align:justify;
+        margin: 0 auto;        
+    }
+
+    .projetos__descricao {
+        font-size: 14px;
+        max-width: 300px;
+        text-align:justify;
+        margin: 0 auto;
+        
+    }     
+
+    .ferramentas-utilizadas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+    
+    .icone__elemento {
+        flex: 1;
+        text-align: center;
+        margin: 0, auto;
+        align-self: center;
+        max-width: 90px;
+    }
+
+    .link__projeto {
+        font-size: 20px;
+    }
+    
+    .icone__container {
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    
+    .custom-bar {
+        width: 90%; 
+    }
+
+    .footer {
+        font-size: 18px; 
+        padding: 10px 0; 
+    }
+
+}
+
+
+
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
